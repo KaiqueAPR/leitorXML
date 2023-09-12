@@ -58,7 +58,7 @@ public class LeitorxmlApplication {
 
         }
         buffRead.close();
-
+        System.out.println(estudanteObj);
     }
 
     //Função responsável por pegar os valores do arquivo XML e popular o objeto
