@@ -23,8 +23,6 @@ public class LeitorxmlApplication {
 
     public static void getCaminhoArquivo() throws IOException {
 
-        Student estudanteObj = new Student();
-
         //Variável que recebe o caminho em que o arquivo está alocado.
         File arquivo = new File("C:\\Users\\kaiqu\\Documents\\Desafio\\exemplo_01.xml");
         String caminhoArquivo = "C:\\Users\\kaiqu\\Documents\\Desafio\\exemplo_01.xml";
@@ -47,11 +45,8 @@ public class LeitorxmlApplication {
         //Leitor do arquivo XML linha a linha
         BufferedReader buffRead = new BufferedReader(new FileReader(caminhoArquivo));
         String linha = "";
-        while (true) {
-            if (linha != null) {
-                System.out.println(linha);
-            } else
-                break;
+        while (linha != null) {
+            System.out.println(linha);
             linha = buffRead.readLine();
 
             estudanteObj = popularObjeto(estudanteObj, linha);
