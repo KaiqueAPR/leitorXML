@@ -5,6 +5,14 @@
   }
 /*Fim formatação Body*/
 
+
+/*Inicio formatação ICON*/
+i {
+  margin-right: 10px;
+}
+/*Fim formatação ICON*/
+
+
 /*Inicio formatação INPUT-FILE*/
   .drop-container {
     position: relative;
@@ -73,7 +81,7 @@
   }
 
   li::marker {
-  color: Grey;
+  color: aliceblue;
   }
 
   li {
