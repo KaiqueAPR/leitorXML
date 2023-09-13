@@ -1,0 +1,28 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Leitor XML</title>
+</head>
+
+<body>
+
+    <form id='form' action='' method='post' enctype='multipart/form-data'>
+        <div id="div-xml">
+            <label for="file" class="drop-container" id="dropcontainer">
+                <span class="drop-title">Drop files XML here</span>
+                or
+                <input id='file-input' class='file-input' type='file' name='file' onchange="newInput(this)"
+                    multiple='multiple' />
+
+            </label>
+            <ul id="dp-files"></ul>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
