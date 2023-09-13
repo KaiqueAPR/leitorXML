@@ -1,8 +1,11 @@
-/*Inicio formatação INPUT-FILE*/
-body {
+/*Inicio formatação BODY*/
+  body {
     margin: 20px 60px;
+    background: aliceblue;
   }
-  
+/*Fim formatação Body*/
+
+/*Inicio formatação INPUT-FILE*/
   .drop-container {
     position: relative;
     display: flex;
@@ -62,4 +65,31 @@ body {
   input[type=file]::file-selector-button:hover {
     background: #0d45a5;
   }
-  /*Fim formatação INPUT-FILE*/
+/*Fim formatação INPUT-FILE*/
+
+/*Inicio formatação LISTA*/
+  ul {
+  list-style: square outside none;
+  }
+
+  li::marker {
+  color: Grey;
+  }
+
+  li {
+    color: black;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  #btnRemover{
+    margin-left: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+/*Fim formatação Lista*/

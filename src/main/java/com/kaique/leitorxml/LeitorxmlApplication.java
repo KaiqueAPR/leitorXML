@@ -47,19 +47,21 @@ public class LeitorxmlApplication {
         String linha = "";
         while (linha != null) {
             System.out.println(linha);
+
             linha = buffRead.readLine();
 
             estudanteObj = popularObjeto(estudanteObj, linha);
 
         }
         buffRead.close();
+        System.out.println();
         System.out.println(estudanteObj);
     }
 
     //Função responsável por pegar os valores do arquivo XML e popular o objeto
     public static Student popularObjeto(Student estudanteObj, String linha) {
 
-        if(linha != null){
+        if(linha != null && !linha.isBlank()) {
 
             if(linha.contains("<firstname>") && linha.contains("</firstname>")){
                 estudanteObj.setPrimeiroNome(linha.split("<firstname>")[1].split("</firstname>")[0]);

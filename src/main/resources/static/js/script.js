@@ -5,7 +5,8 @@ function newInput(input) {
 
     for (let i = 0; i < input.files.length; i++) {
         inputFiles.push(input.files[i]);
-        filesStr += "<li>" + input.files[i].name + "<button onclick='removeLi(this)'>Remover</button>" + "</li>";
+
+        filesStr += "<li>" + input.files[i].name + "<button id='btnRemover' onclick='removeLi(this)'>Remover</button>" + "</li>";
     }
 
     document.getElementById("file-input").value = "";
